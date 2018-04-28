@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/blanc"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_orange"
+        android:id="@+id/relative"
+        android:paddingBottom="15dp">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/idea"
+            android:id="@+id/intituleAbout"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textAbout"
+            android:layout_below="@id/intituleAbout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal" />
+        
+         <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/intituleData"
+            android:layout_below="@id/textAbout"
+            android:textStyle="bold" />
+         <TextView
+            android:id="@+id/textData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/intituleData"
+            android:textStyle="normal" />
+          <Button
+            android:id="@+id/ButtonData"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:background="@drawable/button"
+            android:textColor="@color/blanc"
+            android:textStyle="italic"
+            android:layout_below="@id/textData"
+            android:layout_margin="20dp"
+            />
+          
+          </RelativeLayout>
+          
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanc"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/relative">
+          <TextView 
+              android:id="@+id/findMe"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:text="@string/findMe"/>
+          <Button
+            android:id="@+id/buttonFacebook"
+            android:enabled="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/blanc"
+            android:layout_below="@id/findMe"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:layout_margin="10dp" />
+          <Button
+            android:id="@+id/buttonSite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:singleLine="true"
+            android:enabled="true"
+            android:clickable="true"
+            android:textColor="@color/blanc"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/ic_site"
+            android:layout_below="@id/buttonFacebook"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+        
+</RelativeLayout>

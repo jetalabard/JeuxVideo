@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.jeuxvideo.MainActivity" >
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:showAsAction="ifRoom"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/maj"
+        android:icon="@drawable/ic_maj"
+        android:showAsAction="always"
+        android:title="@string/maj"/>
+</menu>

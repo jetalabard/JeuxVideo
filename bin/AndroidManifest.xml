@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.jeuxvideo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+    
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	 <uses-permission android:name="android.permission.INTERNET" />
+	 <uses-permission android:name="android.permission.WAKE_LOCK" />
+	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"
+        android:hardwareAccelerated="true" >
+       
+        <activity
+            android:name="fr.jeuxvideo.choice.ChoiceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="fr.jeuxvideo.choice_flux_rss.ChoiceRSSActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.choice.ChoiceActivity" />
+        </activity>
+        <activity
+            android:name="fr.jeuxvideo.detail.VideoActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:configChanges="orientation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.detail.DetailFluxActivity" />
+        </activity>
+        
+        <activity
+            android:name="fr.jeuxvideo.detail.DetailFluxActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.choice_flux_rss.ChoiceRSSActivity" />
+        </activity>
+        <activity
+            android:name="fr.jeuxvideo.detail.WebViewActivty"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.detail.DetailFluxActivity" />
+        </activity>
+        <activity
+            android:name="fr.jeuxvideo.about.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName="fr.jeuxvideo.choice.ChoiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.choice.ChoiceActivity" />
+
+        </activity>
+        <activity
+            android:name="fr.jeuxvideo.MajActivity"
+            android:label="@string/maj"
+            android:parentActivityName="fr.jeuxvideo.choice.ChoiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.jeuxvideo.choice.ChoiceActivity" />
+
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

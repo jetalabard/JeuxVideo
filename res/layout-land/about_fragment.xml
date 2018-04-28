@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_detail_pattern"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_orange" >
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blanc"
+            android:paddingBottom="15dp" >
+
+            <TextView
+                android:id="@+id/intituleAbout"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/idea"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAbout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intituleAbout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/intituleData"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAbout"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intituleData"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/ButtonData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textData"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:enabled="true"
+                android:textColor="@color/blanc"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_marginTop="10dp"
+            android:background="@color/blanc" >
+
+            <TextView
+                android:id="@+id/findMe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/findMe" />
+
+            <Button
+                android:id="@+id/buttonFacebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/findMe"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:enabled="true"
+                android:singleLine="true"
+                android:textColor="@color/blanc"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/buttonSite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonFacebook"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_site"
+                android:enabled="true"
+                android:singleLine="true"
+                android:textColor="@color/blanc"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
